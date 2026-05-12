@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
+import { Link } from "@tanstack/react-router";
 
 const links = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Booking", href: "#booking" },
-  { label: "Contact", href: "#contact" },
-];
+  { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
+  { label: "Services", to: "/services" },
+  { label: "Gallery", to: "/gallery" },
+  { label: "Booking", to: "/booking" },
+  { label: "Contact", to: "/contact" },
+] as const;
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -32,30 +33,32 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto max-w-7xl px-5 sm:px-8 h-16 sm:h-20 flex items-center justify-between">
-        <a href="#home" className="font-display text-xl sm:text-2xl tracking-wide">
+        <Link to="/" className="font-display text-xl sm:text-2xl tracking-wide">
           <span className="text-gradient-rose">dolled</span>
           <span className="text-foreground/90">byVishi</span>
-        </a>
+        </Link>
 
         <ul className="hidden lg:flex items-center gap-9 text-sm">
           {links.map((l) => (
-            <li key={l.href}>
-              <a
-                href={l.href}
-                className="relative text-foreground/80 hover:text-foreground transition-colors after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-gradient-rose after:transition-all hover:after:w-full"
+            <li key={l.to}>
+              <Link
+                to={l.to}
+                activeOptions={{ exact: l.to === "/" }}
+                activeProps={{ className: "text-foreground" }}
+                className="relative text-foreground/70 hover:text-foreground transition-colors after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-gradient-rose after:transition-all hover:after:w-full"
               >
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
-        <a
-          href="#booking"
+        <Link
+          to="/booking"
           className="hidden lg:inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium bg-gradient-rose text-primary-foreground hover-glow"
         >
           Book Now
-        </a>
+        </Link>
 
         <button
           aria-label="Toggle menu"
@@ -76,23 +79,23 @@ export function Navbar() {
           >
             <ul className="flex flex-col px-6 py-6 gap-5">
               {links.map((l) => (
-                <li key={l.href}>
-                  <a
-                    href={l.href}
+                <li key={l.to}>
+                  <Link
+                    to={l.to}
                     onClick={() => setOpen(false)}
                     className="text-foreground/85 hover:text-foreground"
                   >
                     {l.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
-              <a
-                href="#booking"
+              <Link
+                to="/booking"
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex justify-center rounded-full px-5 py-3 bg-gradient-rose text-primary-foreground font-medium"
               >
                 Book Appointment
-              </a>
+              </Link>
             </ul>
           </motion.div>
         )}

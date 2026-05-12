@@ -9,6 +9,12 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { ScrollToTop } from "@/components/ScrollToTop";
+import { LoadingScreen } from "@/components/LoadingScreen";
+import { Toaster } from "@/components/ui/sonner";
 
 function NotFoundComponent() {
   return (
@@ -121,7 +127,17 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <div className="dark min-h-screen scroll-smooth bg-background text-foreground">
+        <LoadingScreen />
+        <Navbar />
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+        <FloatingWhatsApp />
+        <ScrollToTop />
+        <Toaster richColors position="top-center" theme="dark" />
+      </div>
     </QueryClientProvider>
   );
 }

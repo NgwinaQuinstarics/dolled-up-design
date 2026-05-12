@@ -1,4 +1,5 @@
 import { FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { Link } from "@tanstack/react-router";
 import { INSTAGRAM, TIKTOK, WHATSAPP } from "./Contact";
 
 export function Footer() {
@@ -16,10 +17,10 @@ export function Footer() {
         <div>
           <h4 className="text-xs uppercase tracking-widest text-primary mb-4">Explore</h4>
           <ul className="space-y-2 text-sm text-foreground/70">
-            <li><a href="#about" className="hover:text-primary">About</a></li>
-            <li><a href="#services" className="hover:text-primary">Services</a></li>
-            <li><a href="#gallery" className="hover:text-primary">Gallery</a></li>
-            <li><a href="#booking" className="hover:text-primary">Book</a></li>
+            <li><Link to="/about" className="hover:text-primary">About</Link></li>
+            <li><Link to="/services" className="hover:text-primary">Services</Link></li>
+            <li><Link to="/gallery" className="hover:text-primary">Gallery</Link></li>
+            <li><Link to="/booking" className="hover:text-primary">Book</Link></li>
           </ul>
         </div>
         <div>

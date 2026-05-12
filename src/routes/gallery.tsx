@@ -33,6 +33,7 @@ const items: { src: string; cat: Cat; alt: string }[] = [
   { src: g5, cat: "Bridal", alt: "Bridal beauty" },
   { src: g6, cat: "Hair", alt: "Studio styling" },
   { src: g2, cat: "Bridal", alt: "Bridal glam" },
+  { src: g4, cat: "Nails", alt: "Nail art set" },
   { src: g1, cat: "Hair", alt: "Sleek install" },
   { src: g3, cat: "Lashes", alt: "Hybrid lashes" },
   { src: g4, cat: "Nails", alt: "Nail art set" },

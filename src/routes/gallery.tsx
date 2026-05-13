@@ -7,6 +7,12 @@ import g3 from "@/assets/g-lash.jpg";
 import g4 from "@/assets/g-nails.jpg";
 import g5 from "@/assets/g-bridal.jpg";
 import g6 from "@/assets/g-salon.jpg";
+import uBraid from "@/assets/u-braid.jpg";
+import uInstall1 from "@/assets/u-install1.jpg";
+import uInstall2 from "@/assets/u-install2.jpg";
+import uLash1 from "@/assets/u-lash1.jpg";
+import uMakeup1 from "@/assets/u-makeup1.jpg";
+import uMakeup2 from "@/assets/u-makeup2.jpg";
 
 export const Route = createFileRoute("/gallery")({
   component: GalleryPage,
@@ -26,6 +32,12 @@ export const Route = createFileRoute("/gallery")({
 type Cat = "All" | "Hair" | "Makeup" | "Lashes" | "Nails" | "Bridal";
 
 const items: { src: string; cat: Cat; alt: string }[] = [
+  { src: uInstall2, cat: "Hair", alt: "Burgundy body wave install" },
+  { src: uMakeup2, cat: "Makeup", alt: "Bronze cut crease glam" },
+  { src: uLash1, cat: "Lashes", alt: "Mega volume lash set" },
+  { src: uBraid, cat: "Hair", alt: "Stitch knotless braids" },
+  { src: uInstall1, cat: "Hair", alt: "Sleek half-up natural install" },
+  { src: uMakeup1, cat: "Makeup", alt: "Sunset orange soft glam" },
   { src: g1, cat: "Hair", alt: "Frontal install" },
   { src: g2, cat: "Makeup", alt: "Soft glam look" },
   { src: g3, cat: "Lashes", alt: "Volume lash set" },
@@ -34,18 +46,18 @@ const items: { src: string; cat: Cat; alt: string }[] = [
   { src: g6, cat: "Hair", alt: "Studio styling" },
   { src: g2, cat: "Bridal", alt: "Bridal glam" },
   { src: g4, cat: "Nails", alt: "Nail art set" },
-  { src: g1, cat: "Hair", alt: "Sleek install" },
+  { src: uInstall2, cat: "Hair", alt: "Red wavy lace front" },
   { src: g3, cat: "Lashes", alt: "Hybrid lashes" },
   { src: g4, cat: "Nails", alt: "Nail art set" },
   { src: g5, cat: "Makeup", alt: "Editorial glam" },
   { src: g6, cat: "Hair", alt: "Polished updo" },
-  { src: g1, cat: "Hair", alt: "Bodywave install" },
-  { src: g2, cat: "Makeup", alt: "Bronze cut crease" },
-  { src: g3, cat: "Lashes", alt: "Wispy mega volume" },
+  { src: uBraid, cat: "Hair", alt: "Knotless braids with curls" },
+  { src: uMakeup1, cat: "Makeup", alt: "Warm orange editorial" },
+  { src: uLash1, cat: "Lashes", alt: "Wispy mega volume" },
   { src: g4, cat: "Nails", alt: "French chrome tips" },
   { src: g5, cat: "Bridal", alt: "Traditional bridal" },
-  { src: g6, cat: "Hair", alt: "Sleek low bun" },
-  { src: g2, cat: "Makeup", alt: "Soft pink glam" },
+  { src: uInstall1, cat: "Hair", alt: "Natural curl blowout" },
+  { src: uMakeup2, cat: "Makeup", alt: "Soft bronze glam" },
   { src: g4, cat: "Nails", alt: "Almond rose set" },
   { src: g3, cat: "Lashes", alt: "Natural classics" },
   { src: g5, cat: "Bridal", alt: "Civil ceremony look" },

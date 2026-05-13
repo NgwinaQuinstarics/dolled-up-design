@@ -39,6 +39,18 @@ const items: { src: string; cat: Cat; alt: string }[] = [
   { src: g4, cat: "Nails", alt: "Nail art set" },
   { src: g5, cat: "Makeup", alt: "Editorial glam" },
   { src: g6, cat: "Hair", alt: "Polished updo" },
+  { src: g1, cat: "Hair", alt: "Bodywave install" },
+  { src: g2, cat: "Makeup", alt: "Bronze cut crease" },
+  { src: g3, cat: "Lashes", alt: "Wispy mega volume" },
+  { src: g4, cat: "Nails", alt: "French chrome tips" },
+  { src: g5, cat: "Bridal", alt: "Traditional bridal" },
+  { src: g6, cat: "Hair", alt: "Sleek low bun" },
+  { src: g2, cat: "Makeup", alt: "Soft pink glam" },
+  { src: g4, cat: "Nails", alt: "Almond rose set" },
+  { src: g3, cat: "Lashes", alt: "Natural classics" },
+  { src: g5, cat: "Bridal", alt: "Civil ceremony look" },
+  { src: g1, cat: "Hair", alt: "Curly closure" },
+  { src: g2, cat: "Makeup", alt: "Birthday glam" },
 ];
 
 const cats: Cat[] = ["All", "Hair", "Makeup", "Lashes", "Nails", "Bridal"];

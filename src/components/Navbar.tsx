@@ -34,8 +34,21 @@ export function Navbar() {
     >
       <nav className="mx-auto max-w-7xl px-5 sm:px-8 h-16 sm:h-20 flex items-center justify-between">
         <Link to="/" className="font-display text-xl sm:text-2xl tracking-wide">
-          <span className="text-gradient-rose">dolled</span>
-          <span className="text-foreground/90">byVishi</span>
+          <img
+            src="/logo.png"
+            alt="dolledbyVishi"
+            className="h-10 sm:h-12 w-auto object-contain"
+            onError={(e) => {
+              const img = e.currentTarget as HTMLImageElement;
+              img.style.display = "none";
+              const fallback = img.nextElementSibling as HTMLElement | null;
+              if (fallback) fallback.style.display = "inline";
+            }}
+          />
+          <span className="hidden">
+            <span className="text-gradient-rose">dolled</span>
+            <span className="text-foreground/90">byVishi</span>
+          </span>
         </Link>
 
         <ul className="hidden lg:flex items-center gap-9 text-sm">

@@ -36,7 +36,7 @@ export function Contact() {
         <SectionTitle
           eyebrow="Contact"
           title={<>Let's <span className="text-gradient-rose italic">connect</span></>}
-          description="Slide into the DMs, drop us a line, or visit the studio in Bamenda."
+          description="Slide into the DMs, drop us a line, or visit one of our two Bamenda studios."
         />
 
         <div className="grid lg:grid-cols-2 gap-8">

@@ -43,7 +43,7 @@ function BookingPage() {
         <div className="mx-auto max-w-5xl px-5 sm:px-8 grid sm:grid-cols-3 gap-4">
           {[
             { icon: FaClock, t: "Hours", v: "Tue – Sat · 9am – 7pm" },
-            { icon: FaMapMarkerAlt, t: "Studio", v: "Bamenda, Cameroon" },
+            { icon: FaMapMarkerAlt, t: "Studios", v: "Up Station · Mile 4 Nkwen" },
             { icon: FaWhatsapp, t: "Quick chat", v: "WhatsApp Vishi", href: `https://wa.me/${WHATSAPP}` },
           ].map((b) => {
             const Inner = (

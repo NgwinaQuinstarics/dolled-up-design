@@ -72,7 +72,7 @@ export function Booking() {
             <input value={form.name} onChange={handle("name")} className={inputCls} placeholder="Your name" />
           </Field>
           <Field label="Phone Number">
-            <input value={form.phone} onChange={handle("phone")} className={inputCls} placeholder="+237 ..." />
+            <input value={form.phone} onChange={handle("phone")} className={inputCls} placeholder="+237 6 53 80 43 01" />
           </Field>
           <Field label="Service Type">
             <select value={form.service} onChange={handle("service")} className={inputCls}>

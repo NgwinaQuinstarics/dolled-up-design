@@ -1,12 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import g1 from "@/assets/g-hair.jpg";
-import g2 from "@/assets/g-makeup.jpg";
-import g3 from "@/assets/g-lash.jpg";
-import g4 from "@/assets/g-nails.jpg";
-import g5 from "@/assets/g-bridal.jpg";
-import g6 from "@/assets/g-salon.jpg";
 import uBraid from "@/assets/u-braid.jpg";
 import uInstall1 from "@/assets/u-install1.jpg";
 import uInstall2 from "@/assets/u-install2.jpg";
@@ -29,7 +23,7 @@ export const Route = createFileRoute("/gallery")({
   }),
 });
 
-type Cat = "All" | "Hair" | "Makeup" | "Lashes" | "Nails" | "Bridal";
+type Cat = "All" | "Hair" | "Makeup" | "Lashes";
 
 const items: { src: string; cat: Cat; alt: string }[] = [
   { src: uInstall2, cat: "Hair", alt: "Burgundy body wave install" },
@@ -38,34 +32,9 @@ const items: { src: string; cat: Cat; alt: string }[] = [
   { src: uBraid, cat: "Hair", alt: "Stitch knotless braids" },
   { src: uInstall1, cat: "Hair", alt: "Sleek half-up natural install" },
   { src: uMakeup1, cat: "Makeup", alt: "Sunset orange soft glam" },
-  { src: g1, cat: "Hair", alt: "Frontal install" },
-  { src: g2, cat: "Makeup", alt: "Soft glam look" },
-  { src: g3, cat: "Lashes", alt: "Volume lash set" },
-  { src: g4, cat: "Nails", alt: "Luxury manicure" },
-  { src: g5, cat: "Bridal", alt: "Bridal beauty" },
-  { src: g6, cat: "Hair", alt: "Studio styling" },
-  { src: g2, cat: "Bridal", alt: "Bridal glam" },
-  { src: g4, cat: "Nails", alt: "Nail art set" },
-  { src: uInstall2, cat: "Hair", alt: "Red wavy lace front" },
-  { src: g3, cat: "Lashes", alt: "Hybrid lashes" },
-  { src: g4, cat: "Nails", alt: "Nail art set" },
-  { src: g5, cat: "Makeup", alt: "Editorial glam" },
-  { src: g6, cat: "Hair", alt: "Polished updo" },
-  { src: uBraid, cat: "Hair", alt: "Knotless braids with curls" },
-  { src: uMakeup1, cat: "Makeup", alt: "Warm orange editorial" },
-  { src: uLash1, cat: "Lashes", alt: "Wispy mega volume" },
-  { src: g4, cat: "Nails", alt: "French chrome tips" },
-  { src: g5, cat: "Bridal", alt: "Traditional bridal" },
-  { src: uInstall1, cat: "Hair", alt: "Natural curl blowout" },
-  { src: uMakeup2, cat: "Makeup", alt: "Soft bronze glam" },
-  { src: g4, cat: "Nails", alt: "Almond rose set" },
-  { src: g3, cat: "Lashes", alt: "Natural classics" },
-  { src: g5, cat: "Bridal", alt: "Civil ceremony look" },
-  { src: g1, cat: "Hair", alt: "Curly closure" },
-  { src: g2, cat: "Makeup", alt: "Birthday glam" },
 ];
 
-const cats: Cat[] = ["All", "Hair", "Makeup", "Lashes", "Nails", "Bridal"];
+const cats: Cat[] = ["All", "Hair", "Makeup", "Lashes"];
 
 function GalleryPage() {
   const [active, setActive] = useState<Cat>("All");

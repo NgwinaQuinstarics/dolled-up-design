@@ -6,7 +6,7 @@ import { getFirebase, isFirebaseConfigured } from "@/lib/firebase";
 import { SectionTitle } from "./SectionTitle";
 import { toast } from "sonner";
 
-export const WHATSAPP = "237600000000";
+export const WHATSAPP = "237653804301";
 export const INSTAGRAM = "https://instagram.com/dolledbyvishi";
 export const TIKTOK = "https://tiktok.com/@dolledbyvishi";
 
@@ -36,7 +36,7 @@ export function Contact() {
         <SectionTitle
           eyebrow="Contact"
           title={<>Let's <span className="text-gradient-rose italic">connect</span></>}
-          description="Slide into the DMs, drop us a line, or visit the studio in Bamenda."
+          description="Slide into the DMs, drop us a line, or visit one of our two Bamenda studios."
         />
 
         <div className="grid lg:grid-cols-2 gap-8">
@@ -47,8 +47,9 @@ export function Contact() {
             transition={{ duration: 0.7 }}
             className="glass rounded-3xl p-8 space-y-6"
           >
-            <ContactRow icon={<FaMapMarkerAlt />} label="Studio" value="Bamenda, Cameroon" />
-            <ContactRow icon={<FaWhatsapp />} label="WhatsApp" value="+237 6 00 00 00 00" href={`https://wa.me/${WHATSAPP}`} />
+            <ContactRow icon={<FaMapMarkerAlt />} label="Studio · Up Station" value="City Chemist, Up Station — Bamenda" />
+            <ContactRow icon={<FaMapMarkerAlt />} label="Studio · Nkwen" value="Mile 4 Park, Nkwen — Bamenda" />
+            <ContactRow icon={<FaWhatsapp />} label="WhatsApp" value="+237 653 804 301" href={`https://wa.me/${WHATSAPP}`} />
             <ContactRow icon={<FaEnvelope />} label="Email" value="hello@dolledbyvishi.com" href="mailto:hello@dolledbyvishi.com" />
             <div className="divider-rose" />
             <div className="flex gap-3">

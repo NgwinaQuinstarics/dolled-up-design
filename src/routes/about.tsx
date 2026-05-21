@@ -79,10 +79,10 @@ function AboutPage() {
           />
           <div className="space-y-10">
             {[
-              { year: "2019", title: "The Beginning", text: "Started doing makeup for friends and family — quickly realised this was a calling, not a hobby." },
-              { year: "2021", title: "Going Pro", text: "Trained intensively in lash extensions, hair installations and editorial makeup. Built a clientele through word of mouth." },
-              { year: "2023", title: "The Studio", text: "Opened the doors to the dolledbyVishi studio in Bamenda — a private, luxury sanctuary for our clients." },
-              { year: "Today", title: "A Full House", text: "Serving brides, creators and women who simply want to feel like the best version of themselves." },
+              { year: "2021", title: "The Beginning", text: "Started doing makeup for friends and family — quickly realised this was a calling, not a hobby." },
+              { year: "2022", title: "Going Pro", text: "Trained intensively in lash extensions, hair installations and editorial makeup. Built a clientele through word of mouth." },
+              { year: "2024", title: "The Studio", text: "Opened the doors to the dolledbyVishi studio in Bamenda — a private, luxury sanctuary for our clients." },
+              { year: "Today", title: "Two Studios", text: "Serving brides, creators and women across Bamenda from two studios — Up Station · City Chemist and Mile 4 Park · Nkwen." },
             ].map((m, i) => (
               <motion.div
                 key={m.year}

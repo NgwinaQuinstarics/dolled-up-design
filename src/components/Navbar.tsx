@@ -32,19 +32,21 @@ export function Navbar() {
         scrolled ? "glass-strong shadow-[0_4px_30px_rgba(0,0,0,0.5)]" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto max-w-7xl px-5 sm:px-8 h-16 sm:h-20 flex items-center justify-between">
-        <Link to="/" className="font-display text-xl sm:text-2xl tracking-wide">
-          <img
-            src="/logo.png"
-            alt="dolledbyVishi"
-            className="h-10 sm:h-12 w-auto object-contain"
-            onError={(e) => {
+      <nav className="mx-auto max-w-7xl px-5 sm:px-8 h-20 sm:h-24 flex items-center justify-between">
+        <Link to="/" className="font-display text-xl sm:text-2xl tracking-wide flex items-center">
+          <span className="inline-flex items-center justify-center rounded-full bg-white/95 ring-2 ring-primary/40 shadow-[0_4px_20px_rgba(255,182,193,0.35)] p-1.5 sm:p-2">
+            <img
+              src="/logo.png"
+              alt="dolledbyVishi"
+              className="h-12 sm:h-16 w-auto object-contain"
+              onError={(e) => {
               const img = e.currentTarget as HTMLImageElement;
               img.style.display = "none";
-              const fallback = img.nextElementSibling as HTMLElement | null;
+              const fallback = img.parentElement?.nextElementSibling as HTMLElement | null;
               if (fallback) fallback.style.display = "inline";
-            }}
-          />
+              }}
+            />
+          </span>
           <span className="hidden">
             <span className="text-gradient-rose">dolled</span>
             <span className="text-foreground/90">byVishi</span>

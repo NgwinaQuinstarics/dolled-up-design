@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
-import heroImg from "@/assets/u-makeup2.jpg";
+import heroImg from "@/assets/hero.jpg";
 
 export function Hero() {
   return (

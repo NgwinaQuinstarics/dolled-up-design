@@ -45,13 +45,13 @@ function ContactPage() {
           </h2>
           <div className="glass-strong rounded-2xl p-6 divide-y divide-primary/10">
             {[
-              ["Monday", "Closed"],
-              ["Tuesday", "9:00 — 19:00"],
-              ["Wednesday", "9:00 — 19:00"],
-              ["Thursday", "9:00 — 19:00"],
-              ["Friday", "9:00 — 20:00"],
-              ["Saturday", "9:00 — 20:00"],
-              ["Sunday", "By appointment"],
+              ["Monday", "9:00 — 22:00"],
+              ["Tuesday", "9:00 — 22:00"],
+              ["Wednesday", "9:00 — 22:00"],
+              ["Thursday", "9:00 — 22:00"],
+              ["Friday", "9:00 — 22:00"],
+              ["Saturday", "9:00 — 22:00"],
+              ["Sunday", "9:00 — 22:00"],
             ].map(([d, h]) => (
               <div key={d} className="flex justify-between py-3 text-sm">
                 <span className="text-foreground/80">{d}</span>

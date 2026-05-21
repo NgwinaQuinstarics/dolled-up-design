@@ -82,10 +82,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Luxury hair, nails, makeup & lash extensions in Bamenda by Vishi." },
       { name: "author", content: "dolledbyVishi" },
       { property: "og:title", content: "dolledbyVishi · Luxury Beauty Studio" },
-      { property: "og:description", content: "Luxury hair, nails, makeup & lashes in Bamenda." },
+      { property: "og:description", content: "Luxury hair, nails, makeup & lash extensions in Bamenda by Vishi." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "dolledbyVishi · Luxury Beauty Studio" },
+      { name: "twitter:description", content: "Luxury hair, nails, makeup & lash extensions in Bamenda by Vishi." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/03be6062-bc6c-429a-a65d-eea1c34426c7/id-preview-366e4a77--4d617b62-b5ef-44d9-88f5-39af2f2f06e0.lovable.app-1779356896055.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/03be6062-bc6c-429a-a65d-eea1c34426c7/id-preview-366e4a77--4d617b62-b5ef-44d9-88f5-39af2f2f06e0.lovable.app-1779356896055.png" },
     ],
     links: [
       {
